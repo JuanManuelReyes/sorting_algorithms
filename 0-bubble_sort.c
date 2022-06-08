@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "sort.h"
 
 void swap(int* xp, int* yp)
 {
