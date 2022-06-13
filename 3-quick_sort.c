@@ -57,36 +57,9 @@ void quickSort(int *array, int low, int high, size_t size)
  **/
 void quick_sort(int *array, size_t size)
 {
+	if (size < 2)
+	{
+		return;
+	}
 	quickSort(array, 0, size - 1, size);
 }
-        /*int lIndexOfLargestElement = 0, lTmp = 0, lPivot = 0;
-        size_t i = 0;
-
-        lPivot = array[size - 1];
-        
-        print_array(array, size);
-
-        for (i = 0; i < size - 1; i++)
-        {
-                if (array[i] < lPivot)
-                {
-                        int lTmp = array[i];
-                        array[i] = array[lIndexOfLargestElement];
-                        array[lIndexOfLargestElement]  = lTmp;
-                        lIndexOfLargestElement++;
-                }
-        }
-        lTmp = array[lIndexOfLargestElement];
-        array[lIndexOfLargestElement] = array[size - 1];
-        array[size - 1] = lTmp;
-
-        if (lIndexOfLargestElement > 1)
-        {
-                quick_sort(array, lIndexOfLargestElement);
-        }
-
-        if (size - lIndexOfLargestElement - 1 > 1)
-        {
-                quick_sort(array + lIndexOfLargestElement + 1, size - lIndexOfLargestElement - 1);
-        }
-}*/
