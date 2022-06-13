@@ -1,3 +1,6 @@
+#ifndef SORT_H
+#define SORT_H
+
 #include <stdlib.h>
 #include <stdio.h>
 /**
@@ -9,9 +12,9 @@
  */
 typedef struct listint_s
 {
-    const int n;
-    struct listint_s *prev;
-    struct listint_s *next;
+	const int n;
+	struct listint_s *prev;
+	struct listint_s *next;
 } listint_t;
 
 
@@ -24,3 +27,5 @@ void quick_sort(int *array, size_t size);
 int last_element(int *array, size_t size);
 int first_element(int *array);
 void shell_sort(int *array, size_t size);
+
+#endif

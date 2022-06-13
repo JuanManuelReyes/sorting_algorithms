@@ -14,7 +14,7 @@ void swap(int *first, int *second)
 }
 
 /**
-*bubble_sort - function that apply method bubble sort
+*bubble_sort - function that ap ply method bubble sort
 *@array: array that we order
 *@size: size of array
 **/
