@@ -6,5 +6,8 @@
 **/
 void counting_sort(int *array, size_t size)
 {
-   print_array(array, size);
+    if (size < 2)
+    {
+        return;
+    }
 }
